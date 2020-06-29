@@ -64,8 +64,6 @@ OpenBSD | 6.6, 6.7
 ## 添加邮件服务器
 
 登录后，页面将自动跳转到控制台，请点击`添加邮件服务器`新增邮件服务器。
-After login, you will be redirected to the `Dashboard` page, please click the
-`Add a mail server` button to add a new mail server.
 
 ![](./images/iredmail-easy/installation/add_mailserver.png){: width="600px" }
 
@@ -89,45 +87,29 @@ After login, you will be redirected to the `Dashboard` page, please click the
 
 单击添加邮件服务器，添加新服务器后，页面将重定向到邮件服务器配置页面。此页面旨在定制邮件服务器各种属性配置。
 
-Click the button to create mail server, after created, page will be redirected
-to mail server profile page.  You're free to update profile here.
-
 ![](./images/iredmail-easy/installation/added_mailserver.png){: width="600px" }
 
 ## 选择后端
 
 在服务器配置页面单击`Backend`选项。
-Click tab `Backend` on the mail server profile page.
 
 iRedMail后端有两种，SQL或LDAP数据库，用于存储邮件域和帐户。我们建议选择自己熟悉的，便于维护。
-A backend is a SQL or LDAP database used to store mail domains and
-accounts. We suggest you choose the one you're familiar with for easier
-maintenance.
 
 ![](./images/iredmail-easy/installation/backends.png){: width="700px" }
 
 ## 选择需要部署的组件
 
 单击邮件服务器配置页的`Components`选项卡。
-Click tab `Components` on the mail server profile page.
 
 配置需要的网络服务需要配置相应的组件。在此页面上，你可以根据需求选择需要部署的组件。
-A component is a software (or software group) which implements some network
-service(s). On this page you can choose the components you want to deploy on
-your mail server.
 
 ![](./images/iredmail-easy/installation/components.png){: width="700px" }
 
 ## 组件设定
 
 单击邮件服务器配置页面的`Settings`选项卡。
-Click tab `Settings` on the mail server profile page.
 
 根据你选择的组件，此页面上的设置可能会有所不同。请填写此页面上所有必填的表单字段。带红色星号的字段为必填字段，其他为可选字段。
-Depends on the components you selected, the settings on this page may be
-different. Please fill all required form fields on this page.
-
-Fields with red asterisk are required, others are optional.
 
 ![](./images/iredmail-easy/installation/settings.png){: width="700px" }
 
@@ -135,45 +117,27 @@ Fields with red asterisk are required, others are optional.
 
 !!! attention
     部署生成的所有账户和密码都存储在`/root/iRedMail/iRedMail.tips`文件中。
-    All accounts and passwords generated during deployment are stored in
-    file `/root/iRedMail/iRedMail.tips` on your server.
 
 单击邮件服务器配置页面的 `Deployment`选项卡。
-Click tab `Deployment` on the mail server profile page.
 
 请在邮件服务器上运行网页中提示的的三个命令，命令会帮助你设定`ssh public key`。如果使用非`root`用户，那么该用户必须是可以使用`sudo`Linux发行版上或`doas`OpenBSD发行版上权限的用户。
-Please run the commands displayed on this page on your mail server, it will
-download a shell script to simplify ssh public key setup. If ssh login user is
-not `root`, it will help setup `sudo` (on Linux) or `doas` (on OpenBSD) also.
 
 ![](./images/iredmail-easy/installation/deployment.png){: width="900px" }
 
 在命令完成后，即可单击`deployment`选项卡`Perform Full Deployment`按钮开始部署服务器。
-After you ran the commands, it's ready to deployment. Click the button
-`Perform Full Deployment` to start the deployment.
 
 根据你的网络环境，云端平台会需要几分钟甚至更长的时间来完成部署，请耐心等待。
 页面将显示部署任务的log，可以在部署失败时分析部署失败的原因。
-Depends on the components you selected, and network connection speed between
-your server and our deployment server, it may take few minutes or even longer
-to finish. Please be patient.
-
-It will refresh the page every 5 seconds and show you the latest output of
-deployment task, you can watch and (hopefully) have some fun. :)
 
 ## 工单支持Get techinical support through the ticket system
 
 如果您有任何疑问，请随时提交工单，详细描述问题，支持团队将尽快答复。
-If you have any question or issue, feel free to open a new support ticket,
-clearly explain the question or issue, support team will try to reply as soon
-as possible.
 
 ![](./images/iredmail-easy/installation/support.png){: width="600px" }
 
 ## 用户资料更改Update account profile
 
 `属性`选项可以修改用户账户资料。
-You can update the account profile on the `Profile` page:
 
 - 姓名
 - 时区
@@ -181,8 +145,6 @@ You can update the account profile on the `Profile` page:
 - 订阅版本更新通知
 
 如果你不喜欢使用云端平台，可以点击左侧属性，删除账号即可。
-If you do not like this platform, you can find a button on this page to remove
-your account.
 
 ![](./images/iredmail-easy/installation/account_profile.png){: width="800px" }
 
